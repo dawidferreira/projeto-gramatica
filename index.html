@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gramática em Foco</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#eef2f7;
+  color:#333;
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#4a69bd,#1e3799);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header h1{
+  font-size:32px;
+}
+
+/* MENU APP */
+.menu{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  padding:15px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.menu button{
+  border:none;
+  background:#dfe4ea;
+  padding:12px 18px;
+  border-radius:30px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.menu button:hover{
+  background:#4a69bd;
+  color:white;
+  transform:translateY(-2px);
+}
+
+/* CONTAINER */
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+
+/* SEÇÕES */
+.section{
+  display:none;
+  animation:fade 0.5s ease;
+}
+
+.active{
+  display:block;
+}
+
+@keyframes fade{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* CARD */
+.card{
+  background:white;
+  padding:20px;
+  margin:20px 0;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+/* VIDEO RESPONSIVO */
+.video{
+  position:relative;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  margin-top:15px;
+}
+
+.video iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:10px;
+}
+
+/* TITULOS */
+h2{
+  margin-bottom:10px;
+  color:#1e3799;
+}
+
+.footer{
+  text-align:center;
+  padding:20px;
+  color:#666;
+  font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Gramática em Foco</h1>
+  <p>Aprendendo Português de forma simples e moderna</p>
+</div>
+
+<div class="menu">
+  <button onclick="mostrar('inicio')">Início</button>
+  <button onclick="mostrar('classes')">Classes Gramaticais</button>
+  <button onclick="mostrar('literario')">Texto Literário</button>
+</div>
+
+<div class="container">
+
+<!-- INICIO -->
+<div id="inicio" class="section active">
+  <div class="card">
+    <h2>Apresentação</h2>
+
+    <p><strong>Curso:</strong> (coloque aqui)</p>
+
+    <p><strong>Integrantes:</strong></p>
+    <ul>
+      <li>Nome 1</li>
+      <li>Nome 2</li>
+      <li>Nome 3</li>
+      <li>Nome 4</li>
+      <li>Nome 5</li>
+      <li>Nome 6</li>
+    </ul>
+
+    <p>Este site apresenta conteúdos educativos sobre classes gramaticais e texto literário, com vídeos produzidos pelo grupo.</p>
+  </div>
+</div>
+
+<!-- CLASSES -->
+<div id="classes" class="section">
+
+  <div class="card"><h2>Substantivo</h2>
+  <p>Nomeia seres, objetos e sentimentos.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Adjetivo</h2>
+  <p>Caracteriza o substantivo.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Verbo</h2>
+  <p>Indica ação, estado ou fenômeno.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Advérbio</h2>
+  <p>Indica circunstâncias.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Pronome</h2>
+  <p>Substitui ou acompanha o substantivo.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Artigo</h2>
+  <p>Define o substantivo.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Preposição</h2>
+  <p>Conecta palavras.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Conjunção</h2>
+  <p>Liga orações.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Numeral</h2>
+  <p>Indica quantidade ou ordem.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+  <div class="card"><h2>Interjeição</h2>
+  <p>Expressa emoções.</p>
+  <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe></div></div>
+
+</div>
+
+<!-- TEXTO LITERARIO -->
+<div id="literario" class="section">
+  <div class="card">
+    <h2>Texto Literário</h2>
+
+    <p>Texto literário valoriza a estética da linguagem e a expressão artística.</p>
+
+    <h3>Características</h3>
+    <ul>
+      <li>Linguagem expressiva</li>
+      <li>Uso de figuras de linguagem</li>
+      <li>Subjetividade</li>
+      <li>Função estética</li>
+    </ul>
+
+    <h3>Diferença</h3>
+    <p><b>Literário:</b> valor artístico<br>
+    <b>Não literário:</b> informativo</p>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+Projeto Escolar © 2026
+</div>
+
+<script>
+function mostrar(secao){
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(secao).classList.add('active');
+}
+</script>
+
+</body>
+</html>
